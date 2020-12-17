@@ -8,13 +8,9 @@
 
 import UIKit
 
-class EditEventTableViewController: UITableViewController, SelectFrequencyTableViewControllerDelegate {
+class EditEventTableViewController: UITableViewController {
     
-    func didSelect(_ controller: SelectFrequencyTableViewController, frequency: String) {
-        repeatFrequencyLabel.text = frequency
-
-    }
-   
+  
     
     @IBOutlet weak var repeatFrequencyLabel: UILabel!
     
@@ -93,4 +89,13 @@ class EditEventTableViewController: UITableViewController, SelectFrequencyTableV
         selectFrequencyTableViewController?.selectedFrequency = repeatFrequencyLabel.text
         return selectFrequencyTableViewController
     }
+}
+
+extension EditEventTableViewController: SelectFrequencyTableViewControllerDelegate{
+    
+    func didSelect(_ controller: SelectFrequencyTableViewController, frequency: String) {
+        repeatFrequencyLabel.text = frequency
+
+    }
+   
 }

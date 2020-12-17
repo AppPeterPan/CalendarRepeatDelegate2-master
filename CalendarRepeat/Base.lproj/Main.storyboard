@@ -50,7 +50,7 @@
         <scene sceneID="b9w-jT-pjK">
             <objects>
                 <tableViewController id="MZ0-vc-Uim" customClass="EditEventTableViewController" customModule="CalendarRepeat" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="she-uZ-f2h">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" id="she-uZ-f2h">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="groupTableViewBackgroundColor"/>
@@ -64,9 +64,8 @@
                                             <rect key="frame" x="0.0" y="0.0" width="348" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Repeat" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g2d-MY-On8">
-                                                    <rect key="frame" x="23" y="11" width="54" height="21"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Repeat" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g2d-MY-On8">
+                                                    <rect key="frame" x="10" y="11.5" width="54" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -80,7 +79,9 @@
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="ftV-4c-2L9" firstAttribute="centerY" secondItem="8El-vx-phQ" secondAttribute="centerY" id="7eO-g6-MoR"/>
+                                                <constraint firstItem="g2d-MY-On8" firstAttribute="leading" secondItem="8El-vx-phQ" secondAttribute="leading" constant="10" id="HEz-wn-mCx"/>
                                                 <constraint firstAttribute="trailing" secondItem="ftV-4c-2L9" secondAttribute="trailing" constant="10" id="Q0n-lI-dwO"/>
+                                                <constraint firstItem="g2d-MY-On8" firstAttribute="centerY" secondItem="8El-vx-phQ" secondAttribute="centerY" id="pFy-XK-r79"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
